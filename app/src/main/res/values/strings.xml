@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AADemo</string>
+    <string name="lbl_spring_animation">Spring animation</string>
+    <string name="lbl_grid_and_pager">Grid and pager</string>
+</resources>

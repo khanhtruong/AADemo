@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/selectionFragment">
+
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.khanhtruong.aademo.view.SelectionFragment"
+        android:label="SelectionFragment" >
+        <action
+            android:id="@+id/action_selectionFragment_to_springAnimation"
+            app:destination="@id/springAnimation" />
+        <action
+            android:id="@+id/action_selectionFragment_to_gridFragment"
+            app:destination="@id/gridAndPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/springAnimation"
+        android:name="com.khanhtruong.aademo.view.SpringFragment"
+        android:label="SpringAnimation" />
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.khanhtruong.aademo.view.subview.PagerFragment"
+        android:label="PagerFragment" >
+        <argument
+            android:name="current_position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/gridAndPagerFragment"
+        android:name="com.khanhtruong.aademo.view.GridAndPagerFragment"
+        android:label="GridAndPagerFragment" >
+        <action
+            android:id="@+id/action_gridAndPagerFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,89 @@
+ext {
+    roomVersion = '2.4.0'
+    rxVersion = '2.1.1'
+    glideVersion = '4.11.0'
+    supportLibrary = '1.4.0'
+
+    // SDK configs
+    appConfig = [
+            id        : "com.khanhtruong.aademo",
+            minSDK    : 24,
+            targetSdk : 33,
+            compileSdk: 33,
+            classifier: null,
+            buildTools: ""
+    ]
+
+    // Versioning
+    appVersion = [
+            majorVersion: 1,
+            minorVersion: 0,
+            patchVersion: 5,
+    ]
+
+    // Kotlin libraries
+    libKotlin = [
+            stdlib    : "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+            coroutines: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0',
+    ]
+
+    // AndroidX libraries
+    libAndroidX = [
+            core              : "androidx.core:core-ktx:1.6.0",
+            appcompat         : "androidx.appcompat:appcompat:1.3.1",
+            constraintLayout  : 'androidx.constraintlayout:constraintlayout:2.1.0',
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:2.4.0-rc01",
+            navigationUI      : "androidx.navigation:navigation-ui-ktx:2.4.0-rc01",
+            navigationDynamic : "androidx.navigation:navigation-dynamic-features-fragment:2.4.0-rc01",
+            lifecycleExt      : 'androidx.lifecycle:lifecycle-extensions:2.2.0',
+            lifecycleCommon   : 'androidx.lifecycle:lifecycle-common-java8:2.3.1',
+            lifecycleViewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0",
+            lifecycleLiveData : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0",
+            activity          : "androidx.activity:activity-ktx:1.3.1",
+            fragment          : "androidx.fragment:fragment-ktx:1.3.6",
+            roomCore          : "androidx.room:room-runtime:${roomVersion}",
+            roomCompiler      : "androidx.room:room-compiler:${roomVersion}",
+            roomRXJava        : "androidx.room:room-rxjava2:${roomVersion}",
+            browser           : "androidx.browser:browser:${supportLibrary}",
+            window            : "androidx.window:window:1.0.0"
+    ]
+
+    // Google libraries
+    libGoogle = [
+            material              : 'com.google.android.material:material:1.5.0-rc01',
+            hilt                  : "com.google.dagger:hilt-android:2.40.5",
+            hiltCompiler          : "com.google.dagger:hilt-compiler:2.40.5",
+            gson                  : 'com.google.code.gson:gson:2.8.6',
+            flexBox               : "com.google.android.flexbox:flexbox:3.0.0",
+            firebaseAnalytics     : "com.google.firebase:firebase-analytics",
+            firebaseBoM           : "com.google.firebase:firebase-bom:29.2.1",
+            firebaseCloudMessaging: "com.google.firebase:firebase-messaging",
+            firebaseDynamicLinks  : "com.google.firebase:firebase-dynamic-links",
+    ]
+
+    // Test libraries
+    libTest = [
+            junit              : 'junit:junit:4.13.2',
+            junitExt           : 'androidx.test.ext:junit:1.1.3',
+            espresso           : 'androidx.test.espresso:espresso-core:3.4.0',
+            runner             : "androidx.test.runner.AndroidJUnitRunner",
+            hiltAndroidCompiler: "com.google.dagger:hilt-android-compiler:2.38.1",
+            hiltAndroidTesting : "com.google.dagger:hilt-android-testing:2.38.1",
+    ]
+
+    lib3Party = [
+            rxAndroid         : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            rxBinding         : "com.jakewharton.rxbinding2:rxbinding:${rxVersion}",
+            retrofit2         : "com.squareup.retrofit2:retrofit:2.8.1",
+            retrofit2Converter: "com.squareup.retrofit2:converter-gson:2.5.0",
+            retrofit2Adapter  : "com.squareup.retrofit2:adapter-rxjava2:2.5.0",
+            okhttp3Logging    : "com.squareup.okhttp3:logging-interceptor:3.12.1",
+            web3j             : 'org.web3j:core:4.8.7-android'
+    ]
+
+    glide = [
+            core      : "com.github.bumptech.glide:glide:${glideVersion}",
+            annotation: "com.github.bumptech.glide:annotations:${glideVersion}",
+            compiler  : "com.github.bumptech.glide:compiler:${glideVersion}"
+    ]
+}
